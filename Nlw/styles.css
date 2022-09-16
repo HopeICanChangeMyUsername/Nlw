@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+header{
+    text-align: center;
+    margin-top: 32px;
+    transition: transform 1s;
+    /*background-color: red;*/
+    /*esses eu q pus V*/
+    max-width: 580px;
+    width:90%;    
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+ 
+    
+    
+}
+header:hover{
+    /*transform:translateX(-230px);*/
+    transform:translateX(-39%);
+
+    
+    
+
+}
+
+header div{
+    width:120px;
+    margin:auto;
+    background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display:flex;
+    padding:4px;
+    /*esses sao do prof*/
+    /*transition: transform 1s;*/
+    
+}
+/*header div:hover{
+    transform:scale(1.1)
+}*/
+/*fins do d prof*/
+header img{
+    border-radius: 50%;
+    width:100%; /*em relação a div*/
+    background-color: #1f1f1f;
+    
+    
+}
+ul{
+    list-style: none;
+}
+body {
+    background-image: url(./assets/bg.jpg);
+    background-repeat:no-repeat;
+    background-position: top center; /*top pra poder ficar no topo pq o center deixa no meio*/
+    background-color: #121214 ;
+    background-size:100% auto;
+    
+}
+body * {
+    font-family: 'Inter';
+    line-height: 160%;
+
+}
+
+main{
+
+    max-width: 580px ;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap:24px;
+
+    margin-top: 32px;
+    
+    
+    
+    
+    
+}
+
+section{
+    color: #FFFFFF;
+
+
+    background-image:linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    
+    /*border: solid red;*/
+}
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;;
+    border-radius: 8px;
+    
+    
+    /*border: solid blue;*/
+
+    
+}
+section h2{
+    /*font-size: 24px; ; já eh esse por padrao */
+    letter-spacing: -0.47;
+    font-weight: 900;
+
+    
+    /*line-height: 38.4px; ja ta no body */
+  
+    
+    
+    
+    
+}
+section p{
+    color: #A1A1AA;
+    font-weight: 400px;
+    letter-spacing: -0.18px;
+    
+    
+}
+
+section ul{
+    display:flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap:wrap; 
+}
+section ul li{
+    transition: transform 0.3s
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+
+.games-list img{
+    border-radius:8px;
+    width:90px;
+    
+    
+}
+.channels-list img{
+    width:70px;
+    border-radius: 100%;
+    border: solid 1px #443E54;
+}
+
+/*animation*/
+header div{
+    animation: fromTop .7s .2s backwards;
+}
+@keyframes fromTop{
+    from{
+        transform:translateY(-30px);
+        opacity:0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+main section:nth-child(2){
+    animation-delay: 0.2s;
+}
+main section:nth-child(3){
+    animation-delay: .4s
+}
+
+@keyframes fromBottom{
+    from{
+        transform:translateY(100px);
+        opacity: 0;
+
+    }
+    to {
+        transform: translateY(0);
+        opacity:1;
+
+    }
+}

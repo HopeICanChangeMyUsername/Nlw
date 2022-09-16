@@ -1,0 +1,81 @@
+primeiro vamos pegar a imagem pro background
+url() é o que chamamos de função
+
+primeiro definimos o background escondemos o header simplesmente pra ver melhor
+
+tiramos as coisas basicas que ja vem como margin e padding
+
+o figma faz a borda em cima no proprio div mas n da pra fazer isso no html entao a section vai funcionar como a cor do top e o div como o cinza
+
+o main contem todos os cartoes
+é o pai dos tres sections, se ele tivewr a largura max d 580 significa q tudo dentro dele vai tentar manter essa largura maxima
+
+o max width eh 580, e se for menor?
+ai entra o width em porcentagem. relativo a largura da tela 90% da da parte toda que existe o site
+
+margin auto ele faz calculo automatico pras  margens laterais se preencherem
+
+box sizing: border box
+
+o padrao é q ele vai pegar a max width e somar ao padding e aumentar pra ser a soma dos definimos
+mas com border box ele considera so o 580 msm com preenchimento 
+
+ela sempre vai manter 580px
+
+
+line height altura da linha
+
+
+display : tem a ver com a visualização das caixas no html
+
+    display none fz sumir
+    dois tpos de visualização
+    1 eh caixa em relação a caixa ao lado dela(block e inline)
+    2 caixas dentro de outras caixas ( flex )
+   
+   1.
+   pq a caixa fica abaixo da outra? pq display do tpo block exemplo
+
+   o <a href> o elemento a ele é do tpo inline, um elemento fica ao lado do outro
+   o li é block
+   isso é em relação ao 1, caixas q fica em relação a outra
+
+   2. display com caixas dentro
+   como por exemplo a ul e tem as li dentro
+   vc consegue mudar todos os elementos ao msm tempo mudando uma propriedade da ul de display
+   o display flex
+
+   a propriedade gap so funciona por causa do diaply flex
+
+as bordinhas coloridas: 
+    eh cor de background no section mas como é gradiente então tem que ser backgroun-img:linear-gradient(angulo que vc qr, cores)
+
+margin com dois valores o primeiro é top e bottom o segundo direita e esquerda
+
+qnd a gente faz o header fica desalinhado msm com o msm tamanho e o text align para de funcionar qnd colocamos width 100% em relação a div. então é so por margin auto dentro da div pra ela centralizar;
+so q fica mal alinhada a div colorida com a img ai a gente poe display flex pq so tem um elemento e ele vai ficar bem no centro e ela vai organizar
+ depois o padding pra definir as bordinhas
+
+
+transicoes css 
+
+    Ele fez o transition diferente.
+    fez header div: hover transform:scale(1.1)
+
+    eu quis brincar entao fiz a transition tentando mover o icone e sai mexendo pra descobrir como
+
+ixi mas qnd a tela fica mto pequena ele fica indo demais
+
+    eu fiz normal pros icones ali do ul.
+
+animações css
+    @keyframes da inicio a animação, fromTop foi so um nome que escolhemos
+
+    o transform: translate 0 é a posição inicial no caso
+
+     animation: fromTop .7s .2s backwards;
+
+     o primeiro numero é o tempo que a animação vai durar, o segundo é o delay e o terceiro é pra animação começar no 0 antes do delay
+
+main section:nth-child(3)
+    pode pegar os numeros
