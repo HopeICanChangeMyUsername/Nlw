@@ -11,7 +11,14 @@ Poject built during Rocketseat's Next Level Week event.
 ### :toolbox: Built using:
 
 -HTML
+
 -CSS
+
 -Git e Github
 
-##TODO -[x] Html -[x] CSS -[x] Transitions using CSS -[x] Animation using CSS -[ ] Link to the 'Shows' versions
+### TODO 
+- [x] :white_check_mark: Html 
+- [x] :white_check_mark: CSS 
+- [x] :white_check_mark: Transitions using CSS 
+- [x] :white_check_mark: Animation using CSS 
+- [ ] Link to the 'TV Shows' version
