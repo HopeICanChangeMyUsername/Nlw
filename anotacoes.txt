@@ -79,3 +79,5 @@ animações css
 
 main section:nth-child(3)
     pode pegar os numeros
+
+    TODO ele vai mandar fazer um site pra msma coisa so que voltado a series, eu qro fzer aquele botao da minha foto aparecer qnd ele for pro lado 'ir para a versao series' e ai vai pra outra page
